@@ -4,7 +4,7 @@ const uid = new ShortUniqueId({ length: 10 });
 const urlCreation = async (req, res) => {
   const { originalUrl } = req.body;
   const urlCode = uid.rnd();
-  const shortUrl = `${req.protocol}://${req.get("host")}/${urlCode}`;
+  const shortUrl = `${req.protocol}://${req.get("host")}/api/${urlCode}`;
 
   const newUrl = new Url({
     originalUrl,
