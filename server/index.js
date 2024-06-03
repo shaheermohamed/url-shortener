@@ -22,7 +22,7 @@ mongoose.connection.on("error", (err) => {
   process.exit(1);
 });
 
-app.use("/api", urlRouter);
+app.use("/", urlRouter);
 
 app.get("/", (req, res) => {
   res.send("Hello World!");
