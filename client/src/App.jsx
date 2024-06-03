@@ -96,6 +96,22 @@ function App() {
         alignItems="center"
         flexDirection="column"
       >
+        <Container centerContent py={10}>
+          <Box
+            bg="white"
+            borderRadius="lg"
+            boxShadow="lg"
+            p={8}
+            textAlign="center"
+          >
+            <Heading as="h1" size="2xl" mb={4} color="teal.500">
+              Welcome to <span style={{ color: "#ff4500" }}>Shorten-URL</span>
+            </Heading>
+            <Text fontSize="xl" color="gray.600">
+              Simplify Your Links in Seconds!
+            </Text>
+          </Box>
+        </Container>
         <Container>
           <Card>
             <CardHeader>
